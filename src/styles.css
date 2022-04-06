@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Franklin", sans-serif;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 4em;
+  height: 1em;
+  margin-bottom: 2em;
+}
+
+.text-container {
+  width: 90%;
+  font-size: x-large;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1em;
+  color: hsl(0, 0%, 59%);
+}
+.bold {
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
+}
+.subscribe-text {
+  font-size: small;
+  color: hsl(209, 33%, 12%);
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 3em;
+}
+
+input {
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 30px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+input::placeholder {
+  color: hsla(0, 0%, 59%, 0.4);
+  padding-left: 1em;
+}
+
+.error-m {
+  font-size: small;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 2em;
+  color: hsl(354, 100%, 66%);
+}
+
+.btn-notify {
+  background-color: hsl(223, 87%, 63%);
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  padding: 1.2em;
+  font-size: small;
+  font-weight: 300;
+  box-shadow: 0 5px 10px hsl(223, 100%, 88%);
+  margin-bottom: 2em;
+}
+
+.img-container {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20%;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 8em;
+}
+ion-icon {
+  font-size: 1.2em;
+  color: hsl(223, 87%, 63%);
+}
+
+.footer {
+  padding: 1em;
+  color: gray;
+  position: relative;
+  bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main {
+    width: 60%;
+  }
+  .logo {
+    margin-top: 1.5em;
+    margin-bottom: 0.1em;
+    height: 0.6em;
+  }
+  .text-container {
+    width: 90%;
+    font-size: xx-large;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1em;
+    color: hsl(0, 0%, 59%);
+  }
+  .subscribe-text {
+    font-size: medium;
+    margin-bottom: 0.1em;
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 5em;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+  }
+  input {
+    width: 60%;
+    height: 1.5em;
+    margin-right: 0.5em;
+  }
+  .btn-notify {
+    width: 30%;
+    height: 1.5em;
+    padding: 1em;
+  }
+  .img-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20%;
+  }
+}
