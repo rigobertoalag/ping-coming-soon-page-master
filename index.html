@@ -19,8 +19,14 @@
       rel="stylesheet"
     />
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
     <link rel="stylesheet" href="./src/styles.css" />
 
@@ -47,8 +53,10 @@
         <p class="subscribe-text">Subscribe and get notified</p>
       </div>
       <div class="btn-container">
-        <input type="email" placeholder="Your email address" id="email" />
-        <span id="error-message"></span>
+        <div class="input-container">
+          <input type="email" placeholder="Your email address" id="email" />
+          <span id="error-message"></span>
+        </div>
         <span class="btn-notify" onclick="sendEmail()">Notify me</span>
       </div>
       <div class="img-container">
